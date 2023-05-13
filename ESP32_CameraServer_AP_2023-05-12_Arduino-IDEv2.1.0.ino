@@ -27,7 +27,7 @@ CameraWebServer_AP CameraWebServerAP;
 
 void setup() {
   Serial.begin(9600); // 115200);
-  Serial.setDebugOutput(true);
+  Serial.setDebugOutput(false);
   Serial.println();
   Serial2.begin(9600, SERIAL_8N1, RXD2, TXD2);
   //http://192.168.4.1/control?var=framesize&val=3
